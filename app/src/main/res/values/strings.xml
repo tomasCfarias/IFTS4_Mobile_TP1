@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TP_1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Genre">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+</resources>

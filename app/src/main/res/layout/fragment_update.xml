@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fragments.update.UpdateFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etUpdateNombre"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Nombre"
+        app:boxStrokeColor="@color/md_theme_light_onTertiaryContainer"
+        app:layout_constraintBottom_toTopOf="@+id/bttnUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etUpdateApellido"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Apellido"
+        app:boxStrokeColor="@color/md_theme_light_onTertiaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateNombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etUpdateAge"
+        style="?attr/textInputFilledStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Edad"
+        app:boxStrokeColor="@color/md_theme_light_onTertiaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateApellido">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvUpdateGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Genero:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerUpdateGender"
+        app:layout_constraintStart_toStartOf="@+id/etUpdateAge"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateAge"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinnerUpdateGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/md_theme_light_tertiary"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUpdateGender"
+        app:layout_constraintStart_toEndOf="@id/tvUpdateGender"
+        app:layout_constraintTop_toTopOf="@+id/tvUpdateGender"
+
+        />
+
+    <Button
+        android:id="@+id/bttnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/md_theme_light_tertiary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerUpdateGender"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
